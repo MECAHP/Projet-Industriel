@@ -24,6 +24,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>src/Integration.c</itemPath>
       <itemPath>src/fonction_ADC.c</itemPath>
       <itemPath>src/fonction_DAC.c</itemPath>
       <itemPath>src/init_OSCILLATOR.c</itemPath>

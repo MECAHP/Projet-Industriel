@@ -35,10 +35,10 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/src/fonction_ADC.o ${OBJECTDIR}/src/fonction_DAC.o ${OBJECTDIR}/src/init_OSCILLATOR.o ${OBJECTDIR}/src/init_dsPIC.o ${OBJECTDIR}/src/main.o
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/src/Integration.o ${OBJECTDIR}/src/fonction_ADC.o ${OBJECTDIR}/src/fonction_DAC.o ${OBJECTDIR}/src/init_OSCILLATOR.o ${OBJECTDIR}/src/init_dsPIC.o ${OBJECTDIR}/src/main.o
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/src/fonction_ADC.o ${OBJECTDIR}/src/fonction_DAC.o ${OBJECTDIR}/src/init_OSCILLATOR.o ${OBJECTDIR}/src/init_dsPIC.o ${OBJECTDIR}/src/main.o
+OBJECTFILES=${OBJECTDIR}/src/Integration.o ${OBJECTDIR}/src/fonction_ADC.o ${OBJECTDIR}/src/fonction_DAC.o ${OBJECTDIR}/src/init_OSCILLATOR.o ${OBJECTDIR}/src/init_dsPIC.o ${OBJECTDIR}/src/main.o
 
 
 CFLAGS=
@@ -101,6 +101,12 @@ ${OBJECTDIR}/src/init_OSCILLATOR.o: src/init_OSCILLATOR.c  nbproject/Makefile-${
 	@${RM} ${OBJECTDIR}/src/init_OSCILLATOR.o.ok ${OBJECTDIR}/src/init_OSCILLATOR.o.err 
 	@${FIXDEPS} "${OBJECTDIR}/src/init_OSCILLATOR.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/init_OSCILLATOR.o.d" -o ${OBJECTDIR}/src/init_OSCILLATOR.o src/init_OSCILLATOR.c  
 	
+${OBJECTDIR}/src/Integration.o: src/Integration.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/src 
+	@${RM} ${OBJECTDIR}/src/Integration.o.d 
+	@${RM} ${OBJECTDIR}/src/Integration.o.ok ${OBJECTDIR}/src/Integration.o.err 
+	@${FIXDEPS} "${OBJECTDIR}/src/Integration.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1 -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/Integration.o.d" -o ${OBJECTDIR}/src/Integration.o src/Integration.c  
+	
 ${OBJECTDIR}/src/fonction_DAC.o: src/fonction_DAC.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/src 
 	@${RM} ${OBJECTDIR}/src/fonction_DAC.o.d 
@@ -131,6 +137,12 @@ ${OBJECTDIR}/src/init_OSCILLATOR.o: src/init_OSCILLATOR.c  nbproject/Makefile-${
 	@${RM} ${OBJECTDIR}/src/init_OSCILLATOR.o.d 
 	@${RM} ${OBJECTDIR}/src/init_OSCILLATOR.o.ok ${OBJECTDIR}/src/init_OSCILLATOR.o.err 
 	@${FIXDEPS} "${OBJECTDIR}/src/init_OSCILLATOR.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/init_OSCILLATOR.o.d" -o ${OBJECTDIR}/src/init_OSCILLATOR.o src/init_OSCILLATOR.c  
+	
+${OBJECTDIR}/src/Integration.o: src/Integration.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} ${OBJECTDIR}/src 
+	@${RM} ${OBJECTDIR}/src/Integration.o.d 
+	@${RM} ${OBJECTDIR}/src/Integration.o.ok ${OBJECTDIR}/src/Integration.o.err 
+	@${FIXDEPS} "${OBJECTDIR}/src/Integration.o.d" $(SILENT) -c ${MP_CC} $(MP_EXTRA_CC_PRE)  -g -omf=elf -x c -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/src/Integration.o.d" -o ${OBJECTDIR}/src/Integration.o src/Integration.c  
 	
 ${OBJECTDIR}/src/fonction_DAC.o: src/fonction_DAC.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} ${OBJECTDIR}/src 

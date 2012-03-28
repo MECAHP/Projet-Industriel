@@ -6,3 +6,4 @@
 
 //Déclaration des variables du projet
 MODIFIER volatile unsigned int val;
+MODIFIER volatile int entree[NbreEch];
